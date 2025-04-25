@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F6F6F6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título da tela -->
+        <TextView
+            android:text="Adicionar resumo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Imagem da capa do livro -->
+        <ImageView
+            android:id="@+id/imgCapaLivro"
+            android:layout_width="160dp"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/livro_placeholder"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Título e autor -->
+        <TextView
+            android:id="@+id/tvTituloLivro"
+            android:text="Memórias Póstumas de Brás Cubas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvAutorLivro"
+            android:text="Machado de Assis"
+            android:textColor="#666"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Campo de resumo -->
+        <TextView
+            android:text="Capítulo 1:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etResumo"
+            android:hint="Digite seu resumo aqui..."
+            android:background="@drawable/rounded_bg"
+            android:minHeight="180dp"
+            android:padding="12dp"
+            android:gravity="top"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Botão salvar -->
+        <Button
+            android:id="@+id/btnSalvarResumo"
+            android:text="Salvar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1A3C65"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
