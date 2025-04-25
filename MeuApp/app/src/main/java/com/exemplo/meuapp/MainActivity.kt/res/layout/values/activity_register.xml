@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#1A3C65"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="Crie sua conta"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etNome"
+            android:hint="Nome Completo"
+            android:backgroundTint="#F7943D"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F7943D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="Email"
+            android:backgroundTint="#F7943D"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F7943D"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Data de Nascimento"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/etDia" android:hint="DD" style="@style/InputFieldSmall"/>
+            <EditText android:id="@+id/etMes" android:hint="MM" style="@style/InputFieldSmall"/>
+            <EditText android:id="@+id/etAno" android:hint="YYYY" style="@style/InputFieldSmall"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:backgroundTint="#F7943D"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F7943D"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cbTermos"
+            android:text="Aceitar os termos e condições"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnCriarConta"
+            android:text="Criar conta"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#F7943D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"/>
+    </LinearLayout>
+</ScrollView>

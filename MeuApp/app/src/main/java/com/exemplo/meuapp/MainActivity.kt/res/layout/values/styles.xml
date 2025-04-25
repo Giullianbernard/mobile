@@ -1,0 +1,16 @@
+<style name="InputField">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginBottom">8dp</item>
+    <item name="android:backgroundTint">#1A3C65</item>
+    <item name="android:textColorHint">#1A3C65</item>
+</style>
+
+<style name="InputFieldSmall">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginEnd">4dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:backgroundTint">#F7943D</item>
+    <item name="android:textColorHint">#F7943D</item>
+</style>
